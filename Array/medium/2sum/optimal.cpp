@@ -18,6 +18,6 @@ int main() {
     int k = 12;
     vector<int> result = twoSum(arr, k);
     if(result[0] != -1) cout << "Sum of K = " << k << " occurs at index " << result[0] << " and " << result[1] << endl;
-    else cout << "Element not found.";
+    else cout << "Element not found."; //this code will return new indices rather than original
     return 0; 
 }
