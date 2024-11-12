@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-    int pairWithMaxSum(vector<int> &arr) {
+    int MaxSum(vector<int> &arr) {
         // Your code goes here
         int sum=0, maxx = arr[0], tempStart = 0, start = 0, end = 0;
         
@@ -20,5 +20,5 @@ using namespace std;
     }
 int main() {
     vector<int> arr = {1,2,3};
-    cout << pairWithMaxSum(arr);
+    cout << MaxSum(arr);
 }
