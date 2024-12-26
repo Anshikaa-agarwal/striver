@@ -1,4 +1,5 @@
-// Problem Statement: Given a sorted array of N integers and an integer x, write a program to find the lower bound of x.
+// Problem Statement: Given a sorted array of N integers and an integer x, write a program to find the lower bound (ceiling) of x.
+// arr[index] >= target
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -11,7 +12,7 @@ int lowerBound(vector<int> arr, int target) {
     
         if(arr[mid]>=target) {
             // left search
-            high = mid;
+            high = mid-1;
         }
         else if(arr[mid]<target) {
             // right search
