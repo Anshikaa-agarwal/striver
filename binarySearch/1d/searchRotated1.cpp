@@ -12,6 +12,9 @@ int searchRotated1(vector<int> arr, int target) {
 
     while(low<=high) {
         mid = low+(high-low)/2;
+        if(arr[low] <= arr[mid]) {
+            // left half is sorted
+        }
     }
 }
 int main() {
