@@ -14,6 +14,10 @@ int searchRotated1(vector<int> arr, int target) {
         mid = low+(high-low)/2;
         if(arr[low] <= arr[mid]) {
             // left half is sorted
+
+        } else if(arr[low]>arr[mid]) {
+            // right array is sorted
+            
         }
     }
 }
