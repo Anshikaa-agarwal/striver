@@ -5,7 +5,7 @@ Problem Statement: Given two sorted arrays arr1 and arr2 of size m and n respect
 The median is defined as the middle value of a sorted list of numbers. In case the length of the list is even, the median is the average of the two middle elements.
 */
 
-// Approach: Using binary search
+// Approach: Using binary search.
 #include<iostream>
 #include<vector>
 #include<algorithm>
