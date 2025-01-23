@@ -1,5 +1,5 @@
 // Problem Statement: Given a sorted array of N integers and an integer x, write a program to find the lower bound of x.
-// Lower bound: the smallest value that is less than or equal to all the values in a given set
+// Lower bound: the smallest value that is less than or equal to all the values in a given set.
 
 #include<iostream>
 #include<vector>
