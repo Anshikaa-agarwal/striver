@@ -55,6 +55,51 @@ void insertIndex(node* &head, int index, int value) {
     newNode->next = temp->next;
     temp->next = newNode;
 }
+
+
+void insertBeforeValue(node* &head, int key, int value) {
+    node* temp = head;
+    if(head==nullptr) {
+        cout << "empty linked list.";
+        return;
+    }
+
+    node* newNode = new node(value);
+
+    while(temp->next->data!=key && temp->next!=nullptr) 
+    temp = temp->next;
+
+    if(temp->next==nullptr) {
+        cout << "no value found.";
+        return;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
+void insertSorted(node* &head, int value) {
+    if(head==nullptr) {
+        insertHead(head, value);
+        return;
+    }
+
+    node* newNode = new node(value);
+    node* temp = head;
+
+    while(temp->next->data <= value && temp->next!=nullptr) {
+        temp=temp->next;
+    }
+
+    if(temp->next==nullptr) {
+        insertEnd(head, value);
+        return;
+    }
+
+    newNode->next = temp->next;
+    temp->next = newNode;
+}
+
 void printLL(node* &head) {
     node* temp = head;
     while(temp!=nullptr) {
@@ -62,6 +107,7 @@ void printLL(node* &head) {
         temp = temp ->next;
     }
 }
+
 int main() {
     node* head = new node(12);
     insertHead(head, 5);
@@ -70,6 +116,8 @@ int main() {
     insertEnd(head, 13);
 
     insertIndex(head, 3, 6);
+    insertBeforeValue(head, 12, 11);
+    insertSorted(head, 7);
     printLL(head);
 
     return 0;
