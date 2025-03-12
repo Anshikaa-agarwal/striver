@@ -29,6 +29,22 @@ void insertHead(node* &head, int value) {
     head=temp;
 }
 
+
+node* insertTail(node* &head, int value) {
+    node* newNode = new node(value);
+    if(head==nullptr) return newNode;
+
+    node* temp = head;
+    while(temp->next!=nullptr) {
+        temp=temp->next;
+    }
+
+    newNode->prev=temp;
+    temp->next=newNode;
+
+    return head;
+}
+
 void printLL(node* head) {
     if(head==nullptr) return;
     node* temp = head;
