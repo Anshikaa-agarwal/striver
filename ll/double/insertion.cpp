@@ -60,7 +60,6 @@ int main() {
     insertHead(head, 3);
     insertHead(head, 2);
     insertHead(head, 1);
-    insertHead(head, 0);
 
     printLL(head);
     return 0;
