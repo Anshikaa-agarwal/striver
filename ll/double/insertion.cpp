@@ -50,7 +50,6 @@ void insertIndex(node* &head, int index, int value) {
     for(int i=0; i<index-1; i++) {
         temp=temp->next;
     }
-    bn
 }
 
 void printLL(node* head) {
