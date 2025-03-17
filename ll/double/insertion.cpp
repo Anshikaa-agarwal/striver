@@ -65,8 +65,6 @@ int main() {
     node* head = new node(5);
     insertHead(head, 4);
     insertHead(head, 3);
-    insertHead(head, 2);
-    insertHead(head, 1);
 
     printLL(head);
     return 0;
