@@ -45,13 +45,6 @@ node* insertTail(node* &head, int value) {
     return head;
 }
 
-void insertIndex(node* &head, int index, int value) {
-    node* temp = head;
-    for(int i=0; i<index-1; i++) {
-        temp=temp->next;
-    }
-}
-
 void printLL(node* head) {
     if(head==nullptr) return;
     node* temp = head;
