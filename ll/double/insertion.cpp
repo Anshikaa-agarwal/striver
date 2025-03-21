@@ -45,14 +45,6 @@ node* insertTail(node* &head, int value) {
     return head;
 }
 
-void printLL(node* head) {
-    if(head==nullptr) return;
-    node* temp = head;
-    while(temp!=nullptr) {
-        cout << temp->data << " ";
-        temp=temp->next;
-    }
-}
 
 int main() {
     node* head = new node(5);
