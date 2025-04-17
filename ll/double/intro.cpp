@@ -49,3 +49,6 @@ int main() {
         ptr = ptr->prev;
     }
 }
+int main() {
+    
+}
