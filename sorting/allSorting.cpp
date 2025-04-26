@@ -23,6 +23,7 @@ void merge(vector<int> &arr, int low, int mid, int high) {
             temp.push_back(arr[i]);
             i++;
         }
+        //
         else temp.push_back(arr[j++]);
     }
 
