@@ -16,7 +16,6 @@ void shiftZero(vector<int> &nums) {
         nums[i++] = 0;
     }
 }
-
 void printArr(vector<int> nums) {
     for(int i=0; i<nums.size(); i++) {
         cout << nums[i] << " ";
