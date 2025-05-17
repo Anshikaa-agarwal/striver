@@ -5,7 +5,6 @@ using namespace std;
 int subarraySumK(vector<int> arr, int k) {
     int longest = 0;
     int start = 0, i = 0, sum=0, count=0;
-
     while(i<arr.size()) {
         sum += arr[i++];
         while(sum>k && start<i) sum -= arr[start++];
