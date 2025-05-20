@@ -38,6 +38,5 @@ int main() {
     vector<int> result = setMismatch(nums);
 
     printArr(result);
-
     return 0;
 }
