@@ -25,7 +25,6 @@ vector<int> setMismatch(vector<int> &nums) {
             break;
         }
     }
-
     return {dup, missing};
 }
 void printArr(vector<int> nums) {
