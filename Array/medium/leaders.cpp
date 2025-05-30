@@ -15,10 +15,10 @@ vector<int> leaders(vector<int> &nums) {
         result.push_back(nums[i]);
     }
     return result;
-}
+} 
 void printArr(vector<int> nums) {
     for(int i=0; i<nums.size(); i++) 
-    cout << nums[i] << " ";
+    cout << nums[i] << "  ";
 }
 
 int main() {
