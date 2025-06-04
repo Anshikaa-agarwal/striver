@@ -51,6 +51,10 @@ vector<vector<int>> threeSum2(vector<int> &nums) {
     return result;
 }
 
+vector<vector<int>> threeSum(vector<int> &nums) {
+    vector<vector<int>> result;
+}
+
 void printArr(vector<int> arr) {
     for(int i=0; i<arr.size(); i++) 
     cout << arr[i] << " ";
