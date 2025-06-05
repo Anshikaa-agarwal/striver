@@ -68,6 +68,5 @@ int main() {
         printArr(result[i]);
         cout << endl;
     }
-
     return 0;
 }
