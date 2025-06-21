@@ -9,7 +9,7 @@ int singlePeak(vector<int> &nums) {
     if(n==1) return 0;
     if(nums[0] > nums[1]) return 0;
     if(nums[n-2] < nums[n-1]) return n-1;
-    // we need to find max element
+    // we need to find max element .
     int low=0, high=nums.size()-1;
     int mid, index=0;
 
